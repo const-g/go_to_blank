@@ -4,10 +4,11 @@ Plugin Name: Go_To_Blank
 Plugin URI: http://const.fr/gotoblank
 Description: Force external links to open in a new tab/window
 Author: Constantin Guay
-Version: 1.0
+Version: 1.1
 Author URI: http://const.fr
 
 Changelog : 
+            1.1   : . Removed the .add() who were not needed.
             1.0.0 : . First beta
 */
 
@@ -17,7 +18,7 @@ function add_blank_script() {
     ?>
     <script>
         jQuery('a[href^="http"]:not([href^="<?php echo($this_domain); ?>"])') 
-            .add('a:not([href^="<?php echo($this_domain); ?>"])').attr('target','_blank');
+            .attr('target','_blank');
     </script>
     <?php
 }
