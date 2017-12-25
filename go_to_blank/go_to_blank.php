@@ -4,11 +4,11 @@ Plugin Name: Go_To_Blank
 Plugin URI: http://const.fr/gotoblank
 Description: Force external links to open in a new tab/window
 Author: Constantin Guay
-Version: 1.1
+Version: 1.0.1
 Author URI: http://const.fr
 
 Changelog : 
-            1.1   : . Removed the .add() who were not needed.
+            1.0.1 : . Removed the .add() who were not needed.
             1.0.0 : . First beta
 */
 
@@ -23,4 +23,4 @@ function add_blank_script() {
     <?php
 }
 
-add_action('wp_footer', add_blank_script);
+add_action('wp_footer', 'add_blank_script');
