@@ -1,15 +1,15 @@
 <?php
 /*
-Plugin Name: Go_To_Blank
-Plugin URI: http://const.fr/gotoblank
+Plugin Name: Go To Blank
+Plugin URI: https://const.fr/gotoblank
 Description: Force external links to open in a new tab/window
 Author: Constantin Guay
 Version: 1.0.1
-Author URI: http://const.fr
+Author URI: https://const.fr
 
 Changelog : 
-            1.0.1 : . Removed the .add() who were not needed.
-            1.0.0 : . First beta
+    1.0.1 : . Removed the .add() who were not needed.
+    1.0.0 : . First beta
 */
 
 function add_blank_script() {
